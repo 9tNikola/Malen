@@ -1,0 +1,355 @@
+/* General Styles */
+.pricing-container {
+  background-color: #1e1e1e;
+  color: #ffffff;
+  padding: 120px 50px;
+  font-family: "Poppins", sans-serif;
+  overflow: hidden;
+}
+
+/* Header Section */
+.pricing-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.header-left {
+  text-align: left;
+}
+
+.header-subtitle {
+  font-size: 14px;
+  color: #f05623;
+  text-transform: uppercase;
+}
+
+.header-title {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 48px;
+  font-weight: bold;
+}
+
+.header-button {
+  width: 193px;
+  height: 60px;
+  background-color: #f05623;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.header-button:hover {
+  background-color: #e64e1f;
+}
+
+/* Content Section */
+.pricing-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+/* Services Section */
+.services-section {
+  width: 795px;
+  height: 581.37px;
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+  background-color: #fff;
+}
+
+.service-card {
+  display: flex;
+  background-color: #ffffff;
+  color: #000000;
+  padding: 0 0 29px;
+  margin: 0 0 29px;
+  gap: 30px;
+  border-bottom: 1px solid black;
+}
+
+.service-image {
+  width: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.service-content {
+  flex: 1;
+}
+
+.service-title-price {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.service-title {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.service-price {
+  font-size: 24px;
+  color: #f05623;
+
+  font-weight: bold;
+}
+
+.service-subservices {
+  margin-top: 10px;
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 20px;
+}
+.service-subservices .serv-check {
+  width: 232px;
+  height: 34;
+  font-size: 16px;
+  background-color: #f3f1f2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 4px 15px 4px 20px;
+}
+.service-subservices .serv-check i {
+  color: #eb3300;
+}
+
+.service-subservices li {
+  display: flex;
+  flex: 40%;
+  align-items: center;
+  gap: 5px;
+}
+
+/* Premium Package */
+.premium-package {
+  width: 419.33px;
+  height: 581.91px;
+  display: flex;
+  flex-direction: column;
+  cursor: default;
+}
+
+.premium-top {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  background-color: black;
+  color: #ffffff;
+  transition: background-color 0.5s ease;
+}
+.premium-package:hover .premium-top {
+  background-color: #eb3300;
+}
+.premium-title-desc {
+  display: flex;
+  flex-direction: column;
+  flex: 2.5;
+  justify-content: center;
+  padding: 40px;
+  border-bottom: 0.1px solid rgba(255, 255, 255, 0.23);
+}
+.premium-title {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  font-weight: bold;
+}
+
+.premium-description {
+  font-family: Inter, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 5px;
+}
+.premium-price-truck {
+  display: flex;
+  flex: 2;
+  justify-content: space-between;
+  padding: 24px 40px;
+}
+.premium-truck {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 36px;
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.2);
+}
+.premium-price {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.premium-price span {
+  font-size: 14px;
+}
+
+.premium-bottom {
+  flex: 2;
+  background-color: #ffffff;
+  color: #000000;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.premium-features {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.premium-features li {
+  height: 26px;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  margin: 0 0 10px;
+  gap: 5px;
+}
+.premium-features .li {
+  padding: 0 0 0 10px;
+}
+.premium-features i {
+  color: black;
+}
+.premium-features i {
+  transition: color 0.5s ease;
+  color: black;
+}
+.premium-package:hover .premium-features i {
+  transition: color 0.5s ease;
+  color: #eb3300;
+}
+
+.purchase-button {
+  font-family: Inter, sans-serif;
+  width: 203px;
+  height: 60px;
+  background-color: black;
+  color: #ffffff;
+  border: none;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.5s ease;
+}
+.premium-package:hover .purchase-button {
+  background-color: #eb3300;
+}
+.premium-package:hover .purchase-button:hover{
+  transition: all 0.3s ease;
+  background-color: black;
+}
+
+/* General Styles */
+.pricing-container {
+  background-color: #1e1e1e;
+  color: #ffffff;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Content Section: Make it responsive */
+.pricing-content {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 30px;
+}
+
+/* Adjust layout for medium screens */
+@media (max-width: 1024px) {
+  .pricing-content {
+    grid-template-columns: 1fr; /* Stack columns */
+  }
+  .services-section {
+    width: 100%; /* Full width */
+    height: auto; /* Allow dynamic height */
+  }
+  .premium-package {
+    width: 100%; /* Full width */
+    height: auto;
+  }
+}
+
+/* Adjust for small screens */
+@media (max-width: 768px) {
+  .pricing-container {
+    padding: 20px 10px; /* Reduce padding for smaller screens */
+  }
+  .pricing-header {
+    flex-direction: column; /* Stack header content */
+    text-align: center;
+  }
+  .header-left {
+    margin-bottom: 20px; /* Add spacing */
+  }
+  .header-button {
+    padding: 8px 15px; /* Smaller button size */
+    font-size: 12px;
+  }
+  .services-section,
+  .premium-package {
+    padding: 20px; /* Reduce padding inside sections */
+  }
+  .service-card {
+    flex-direction: column; /* Stack image and content */
+    gap: 10px;
+  }
+  .service-image {
+    width: 100%;
+    border-radius: 8px;
+  }
+  .premium-title-desc {
+    padding: 20px;
+  }
+  .premium-price-truck {
+    flex-direction: column; /* Stack truck and price */
+    gap: 10px;
+  }
+  .premium-bottom {
+    padding: 20px;
+  }
+}
+
+/* Adjust for extra small screens */
+@media (max-width: 480px) {
+  .header-title {
+    font-size: 24px; /* Smaller title */
+  }
+  .header-subtitle {
+    font-size: 12px; /* Adjust subtitle size */
+  }
+  .service-title {
+    font-size: 20px; /* Smaller font size for titles */
+  }
+  .service-price {
+    font-size: 20px;
+  }
+  .premium-title {
+    font-size: 24px;
+  }
+  .purchase-button {
+    width: 100%; /* Full width for better touch targets */
+    height: auto;
+    padding: 10px;
+  }
+}
+

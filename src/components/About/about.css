@@ -1,0 +1,242 @@
+/* General Layout for the Section */
+.section-3 {
+  display: flex;
+  justify-content: space-between;
+  padding: 120px 20px; /* Adjusted padding for better spacing */
+  background-color: #f9f9f9; /* Light background */
+  font-family: "Arial", sans-serif;
+  gap: 50px; /* Space between left and right parts */
+}
+
+/* Left Section (Text Content) */
+.part1 {
+  flex: 1.5; /* Slightly wider than part2 */
+}
+
+.section3-top {
+  display: flex;
+  flex-direction: column;
+  gap: 35.3px;
+  margin-bottom: 40px; /* Increased margin for more breathing room */
+}
+
+.section-title {
+  color: #ff4500; /* Bright orange */
+  text-transform: uppercase;
+  font-size: 18px; /* Slightly larger */
+  font-weight: bold;
+  margin-bottom: 15px;
+  letter-spacing: 1px; /* Adds emphasis */
+}
+
+.heading {
+  font-size: 42px; /* Larger font for the heading */
+  font-weight: 800; /* Extra bold */
+  color: #333; /* Dark gray for contrast */
+  line-height: 1.3; /* Spacing between lines */
+  margin-bottom: 20px; /* Space below heading */
+}
+
+/* Lower Section (Buttons, Ribbons, and Text) */
+.section3-lower {
+  margin-top: 25px;
+}
+
+.buttons {
+  display: flex;
+  gap: 20px; /* Equal spacing between buttons */
+  margin-bottom: 30px; /* Space below buttons */
+}
+
+.section3-lower .buttons .button {
+  padding: 14px 28px; /* Increased padding for prominence */
+  background-color: #EB3300; /* Bright orange */
+  color: #fff; /* White text */
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Slight 3D effect */
+}
+
+.button:hover {
+  background-color: #e03e00; /* Slightly darker on hover */
+}
+.section-3 .part1 .section3-lower> span{
+  color: rgb(75,75,75);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+}
+
+.content {
+  font-size: 16px;
+  line-height: 1.8; /* Better readability */
+  color: #666; /* Muted gray */
+  margin-bottom: 40px; /* Extra space below content */
+}
+
+.ribbons {
+  margin-bottom: 40px; /* Space between ribbons and other elements */
+}
+
+.ribbon1,
+.ribbon2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 20px; /* Space between ribbon rows */
+  gap: 10px;
+}
+
+.title {
+  font-size: 18px;
+  font-weight: 700;
+  color: #333;
+}
+
+.percent {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+}
+.ribbons{
+  width: 500px;
+}
+
+.ribbon {
+  width: 400px;
+  height: 12px; /* Slightly taller progress bar */
+  background-color: #eee; /* Light gray */
+  border-radius: 6px;
+  position: relative;
+  overflow: hidden;
+}
+.ribbon-content {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 100px;
+}
+
+.ribbon1 .ribbon::before,
+.ribbon2 .ribbon::before {
+  content: "";
+  display: block;
+  height: 100%;
+  background-color: #EB3300; /* Progress bar fill */
+  border-radius: 6px;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.ribbon1 .ribbon::before {
+  width: 90%; /* Adjust progress bar width */
+}
+
+.ribbon2 .ribbon::before {
+  width: 85%; /* Adjust progress bar width */
+}
+
+/* Get a Quote Button */
+.main {
+  padding: 16px 32px; /* Bigger button */
+  background-color: #EB3300;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* Prominent shadow */
+}
+
+.main:hover {
+  background-color: #e03e00;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Right Section (Images) */
+.part2 {
+  display: flex;
+  justify-content: right;
+  width: 616px;
+  height: 685px;
+  position: relative;
+}
+.upper-image{
+  width: 530px;
+  height: 560px;
+  background-image: url('/public/images/about/about_4_1.jpg');
+}
+.part2>.img2{
+  display: flex;
+  flex-direction: column;
+  width: 313px;
+  height: 396px;
+  background-color: blue;
+  position: absolute;
+  left: -50px;
+  bottom: -40px;
+}
+.part2>.img2>.lower-image{
+  width: 313px;
+  height: 310px;
+  flex: 3.6;
+  background-image: url('/public/images/about/about_4_2.jpg');
+
+}
+.img2>.head{
+  display: flex;
+  flex: 1;
+  height: 310px;
+  background-color:#EB3300;
+  justify-content: center;
+  align-items: center;
+}
+.heading2{
+  display: flex;
+  gap: 10px;
+  color: white;
+}
+.heading2>h3{
+  font-size: 36px;
+  font-weight: 700;
+  margin: 0;
+}
+.heading2>span{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .section-3 {
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+  }
+
+  .part1,
+  .part2 {
+    flex: 1;
+    width: 100%;
+  }
+
+
+  .buttons {
+    flex-wrap: wrap;
+    gap: 10px; /* Reduced gap */
+    justify-content: center;
+  }
+
+
+}

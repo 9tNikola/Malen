@@ -1,0 +1,11 @@
+flowchart TD
+   Trigger --> Blame
+   Blame --> Defense
+   Defense --> Escalation
+   Escalation --> Trigger
+   Escalation -->|Break| CommunicationBreakdown
+   
+   style Trigger fill:#FF6F61,stroke:#333,stroke-width:2px
+   style Blame fill:#F7CAC9,stroke:#333,stroke-width:2px
+   style Defense fill:#6B5B95,stroke:#333,stroke-width:2px
+   style Escalation fill:#88B04B,stroke:#333,stroke-width:2px

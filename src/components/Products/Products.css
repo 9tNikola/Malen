@@ -1,0 +1,285 @@
+.products {
+  padding: 120px 0;
+  text-align: center;
+}
+
+.products-title {
+  font-family: "Plus Jakarta Sans", serif;
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 100px;
+}
+
+.products-slider {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.slider-track {
+  display: flex;
+  transition: transform 0.5s ease-in-out; /* Smooth sliding animation */
+  transform: translateX(0); /* Default position */
+  width: 100%; /* Ensure it takes the full width */
+}
+
+.sliding {
+  transform: translateX(-25%); /* Move left by one card width */
+}
+
+.product-card {
+  flex: 0 0 25%;
+  padding: 10px;
+  box-sizing: border-box;
+  cursor: default;
+}
+
+.product-card:hover .product-image {
+  transform: scale(1.1);
+}
+
+.product-image-container {
+  position: relative;
+  width: 250px;
+  height: 250px;
+  margin: 0 auto;
+}
+
+.product-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+  transition: all 0.5s ease;
+}
+
+.sale-label {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  background-color: #f44336;
+  color: #fff;
+  padding: 5px;
+  font-size: 12px;
+  font-weight: bold;
+  border-radius: 4px;
+}
+
+.product-details {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+.product-rating{
+  font-size: 14px;
+}
+
+.product-name {
+  font-family: "Plus Jakarta Sans", serif;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  transition: all 0.5s ease;
+}
+
+.product-name:hover {
+  color: #f44336;
+  cursor: pointer;
+}
+
+.product-price {
+  font-family: Inter, sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  color: rgb(75,75,75);
+}
+
+.old-price {
+  text-decoration: line-through;
+  color: #999;
+  margin-left: 5px;
+}
+
+.slider-controls {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.control-btn {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.control-btn:hover {
+  background-color: #555;
+}
+.animate{
+  animation: swip 1s ease;
+}
+@keyframes swip {
+  100%{
+    opacity: 0;
+  }
+}
+
+
+
+
+.control-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(100, 99, 99, 0.5);
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 24px;
+  padding: 10px;
+  z-index: 10;
+  transition: background-color 0.3s ease;
+}
+
+.control-btn:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+  transform: translateY(-50%) scale(1.1); /* Scale up on hover */
+}
+
+.control-btn:active {
+  transform: translateY(-50%) scale(1); /* Reset on click */
+}
+
+.control-btn.left {
+  left: 10px; /* Position left button */
+}
+
+.control-btn.right {
+  right: 10px; /* Position right button */
+}
+
+.products-slider {
+  padding: 0 50px; /* Space for the buttons on the left and right */
+}
+/* General Styles */
+.products {
+  padding: 80px 20px; /* Reduced padding for smaller screens */
+  text-align: center;
+}
+
+.products-title {
+  font-size: 36px; /* Adjusted for smaller screens */
+  margin-bottom: 50px; /* Reduced spacing for compact layouts */
+}
+
+/* Slider Adjustments */
+.products-slider {
+  padding: 0 20px; /* Adjust padding for smaller screens */
+}
+
+.slider-track {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  transform: translateX(0);
+}
+
+.product-card {
+  flex: 0 0 25%; /* Default for desktop */
+  padding: 10px;
+  box-sizing: border-box;
+  cursor: default;
+}
+
+/* Image Container */
+.product-image-container {
+  width: 250px;
+  height: 250px;
+  margin: 0 auto;
+}
+
+.product-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+  transition: all 0.5s ease;
+}
+
+/* Sale Label */
+.sale-label {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  background-color: #f44336;
+  color: #fff;
+  padding: 5px;
+  font-size: 12px;
+  font-weight: bold;
+  border-radius: 4px;
+}
+
+/* Responsive Media Queries */
+@media (max-width: 1024px) {
+  .product-card {
+    flex: 0 0 33.33%; /* Show 3 cards per row */
+  }
+  .product-image-container {
+    width: 200px;
+    height: 200px;
+  }
+  .products-title {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 768px) {
+  .product-card {
+    flex: 0 0 50%; /* Show 2 cards per row */
+  }
+  .product-image-container {
+    width: 150px;
+    height: 150px;
+  }
+  .products-title {
+    font-size: 28px;
+  }
+  .control-btn {
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .product-card {
+    flex: 0 0 100%; /* Show 1 card per row */
+  }
+  .product-image-container {
+    width: 120px;
+    height: 120px;
+  }
+  .products-title {
+    font-size: 24px;
+  }
+  .control-btn {
+    width: 35px;
+    height: 35px;
+    font-size: 18px;
+  }
+}
